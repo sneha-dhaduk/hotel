@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/static/css/stylelogo2.css">
+    </head>
+    <body>
+        <form method="post" action="{% url 'result1' %}">
+            {% csrf_token %}
+            <!-- <label>value1</label>
+            <input type="text" name="value1">
+            <br><br><br>
+            <label>value2</label>
+            <input type="text" name="value2">
+            <br><br><br> -->
+            {{form}}
+            <button type="submit">ENTER</button>
+        </form>
+    </body>
+</html>

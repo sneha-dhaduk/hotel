@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/stylelogo2.css">
+</head>
+<body >
+	<div class="banner2">
+<header>
+	<div class="main">
+		<div class="navbar">
+			<nav>
+				{% url 'home' as home %}
+				<a id="{% if request.path == home %}active{% endif %}"href="{{home}}">Home</a>
+				{% url 'rooms' as rooms %}
+				<a id="{% if request.path == rooms %}active{% endif %}"href="{{rooms}}">Rooms</a>
+				{% url 'about' as about %}
+				<a id="{% if request.path == about %}active{% endif %}"href="{{about}}">About</a>
+				{% url 'contact' as contact %}
+				<a id="{% if request.path == contact %}active{% endif %}"href="{{contact}}">Contact</a>
+			</nav>
+			</nav>
+		</div>
+		<div class="logo">
+			<img src="\static\image\hotellogo.webp">
+			
+		</div>
+		<div class="but">
+			<button>Book Room</button>
+		</div>
+	</div>
+</header>
+<section>
+	<div class="contant12">
+		<h3>About Montana</h3>	
+	</div>
+</section>
+<section>
+	<div class="post">
+	<h1>fname={{n1}}</h1>
+	<h1>lname={{n2}}</h1>
+	<h1>email={{n6}}</h1>
+	<h1>password={{n3}}</h1>
+	<h1>date={{n4}}</h1>
+	<h1>number={{n5}}</h1>
+	</div>
+</section>
+{% include 'footer.html' %}

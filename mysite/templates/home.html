@@ -1,0 +1,148 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+	<link rel="stylesheet" type="text/css" href="/static/css/stylelogo2.css">
+</head>
+<body >
+	<div class="banner">
+<header>
+	<div class="main">
+		<div class="navbar">
+			<nav>
+				{% url 'home' as home %}
+				<a id="{% if request.path == home %}active{% endif %}"href="{{home}}">Home</a>
+				{% url 'rooms' as rooms %}
+				<a id="{% if request.path == rooms %}active{% endif %}"href="{{rooms}}">Rooms</a>
+				{% url 'about' as about %}
+				<a id="{% if request.path == about %}active{% endif %}"href="{{about}}">About</a>
+				{% url 'contact' as contact %}
+				<a id="{% if request.path == contact %}active{% endif %}"href="{{contact}}">Contact</a>
+			</nav>
+		</div>
+		<div class="logo">
+			<img src="/static\image\hotellogo.webp">
+			
+		</div>
+		<div class="but">
+			<button>Book Room</button>
+		</div>
+	</div>
+</header>
+	<section>
+		<div class="contant">
+			<h3>Life is Beautiful</h3>
+			<p>Unlock to enjoy the view of Martine</p>
+		</div>
+	</section>
+</header>
+</div><br><br><br>
+<section>
+	<div class="s1">
+		<div class="c3">
+			<div class="d1">
+				<span><b>About Us</b></span>
+			</div>
+			<div class="d2">
+				<h3>A Luxuries Hotel  <br>
+					with Nature</h3>
+			</div>
+			<div class="d3">
+				<p>Suscipit libero pretium nullam potenti. Interdum,<br> blandit phasellus consectetuer dolor ornare<br>
+					dapibus enim ut tincidunt rhoncus tellus<br>sollicitudin pede nam maecenas, dolor sem.<br> Neque
+					sollicitudin enim. Dapibus lorem feugiat<br> facilisi faucibus et. Rhoncus.</p>
+			</div>
+			<div class="l">
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+		<div class="c1"></div>
+		<div class="c2"></div>
+	</div>
+</section>
+<section>
+	<div class="oop">
+		<h4><b>Our Offers</b></h4>
+	</div>
+	<div class="oop1">
+		<h1>Ongoing Offers</h1>
+	</div><br><br><br><br>
+	<div class="mainbig">
+		<div class="mainbig1">
+			<div class="image1">
+				<img src="\static\image\1.png.webp" height="270px" width="270px">
+			</div><br><br>
+			<div class="contant1">
+				<p><b>Up to 35% savings on Club<br> rooms and Suites</b></p><br>
+				<ul>
+					<li>Luxaries condition</li>
+					<li>3 Adults & 2 Children size</li>
+					<li>Sea view side</li>
+				</ul><br>
+			</div>
+			<div class="btn1">
+				<a href="#">Book Now</a>
+			</div>
+		</div>
+		<div class="mainbig2">
+			<div class="image2">
+				<img src="\static\image\2.png.webp" height="270px" width="270px">
+			</div><br><br>
+			<div class="contant2">
+				<p><b>Up to 35% savings on Club<br> rooms and Suites</b></p><br>
+				<ul>
+					<li>Luxaries condition</li>
+					<li>3 Adults & 2 Children size</li>
+					<li>Sea view side</li>
+				</ul><br>
+			</div>
+			<div class="btn2">
+				<a href="#">Book Now</a>
+			</div>
+		</div>	
+		<div class="mainbig3">
+			<div class="image3">
+				<img src="\static\image\3.png.webp" height="270px" width="270px">
+			</div><br><br>
+			<div class="contant3">
+				<p><b>Up to 35% savings on Club<br> rooms and Suites</b></p><br>	
+				<ul>
+					<li>Luxaries condition</li>
+					<li>3 Adults & 2 Children size</li>
+					<li>Sea view side</li>
+				</ul><br>
+			</div>
+			<div class="btn3">
+				<a href="#">Book Now</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="s2">
+		<div class="a1"></div>
+		<div class="a2"></div>
+		<div class="a3">
+			<div class="d1">
+				<span><b>Delicious Food</b></span>
+			</div>
+			<div class="d2">
+				<h3>We Serve Fresh and <br>
+					Delicious Food</h3>
+			</div>
+			<div class="d3">
+				<p>Suscipit libero pretium nullam potenti. Interdum,<br> blandit phasellus consectetuer dolor ornare<br> dapibus enim ut tincidunt rhoncus tellus<br> sollicitudin pede nam maecenas, dolor sem.<br> Neque sollicitudin enim. Dapibus lorem feugiat<br> facilisi faucibus et. Rhoncus.</p>
+			</div>
+			<div class="l">
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+</section>
+{% include 'footer.html' %}
+

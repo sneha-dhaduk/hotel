@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.s2{
+    margin-left: 50px;
+    text-align: center;
+}
+
+
+.s3{
+    margin-left: 50px;
+    text-align: center;
+}
+.s1{
+    text-align: center;
+}

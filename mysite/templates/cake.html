@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="\static/css/cake.css">
+    </head>
+    <body>
+        <section>
+            <div class="main">
+                {% for i in rec %}
+                <div class="s1">
+                    <div>
+                        <img src="/media/{{i.image}}" height="250" width="250" >
+                    </div>
+                    <div>
+                        <a href="/detail/{{i.id}}"><h2><b>{{i.title}}</b></h2></a>
+                    </div>
+                    <div>
+                        <p>{{i.contain | safe}}</p>
+                        <button>{{i.price}} | Order Now</button>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- <div class="s2">
+                    <div>
+                        <img src="\static\image\cake2.webp" height="250" width="250" >
+                    </div>
+                    <div>
+                        <h2><b>Sweetheart</b></h2>
+                    </div>
+                    <div>
+                        <p>Land behold it created good<br>saw after she'd our set.</p>
+                        <button>$20 | Order Now</button>
+                    </div>
+                </div>
+                <div class="s3">
+                    <div>
+                        <img src="\static\image\cake1.webp" height="250" width="250" >
+                    </div>
+                    <div>
+                        <h2><b>Blackforest</b></h2>
+                    </div>
+                    <div>
+                        <p>Land behold it created good<br>saw after she'd our set.</p>
+                        <button>$20 | Order Now</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </body>
+</html>

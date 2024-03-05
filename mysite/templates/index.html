@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>introduction</title>
+    </head>
+    <body>
+        <h1><i>{{main}}</i></h1>
+        {%if digit|length > 0 %}
+            {% for i in digit %}
+                {% if i|divisibleby:'1' %}
+                    <h1>{{i}}</h1>
+                {% endif%}
+            {% endfor %}
+        {% else %}
+            <h1>no data found</h1>
+        {% endif %}
+
+        <table border='1'>
+            <tr>
+                <th>name</th>
+                <th>phoneno.</th>
+            </tr>
+            {% for i in detail %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.phoneno.}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/static/css/stylelogo2.css">
+    </head>
+    <body>
+        <form method="post" action="{% url 'r' %}">
+            {% csrf_token %}
+            <!-- <label>N1</label>
+            <input type="text" name="n1">
+            <br><br><br>
+            <label>N2</label>
+            <input type="text" name="n2">
+            <br><br><br>
+            <label>OPERATOR</label>
+            <input type="text" name="operator">
+            <br><br><br> -->
+            {{form.as_p}}
+            <button type="submit">ENTER</button>
+            <br><br><br>
+        </form>
+    </body>
+</html>
